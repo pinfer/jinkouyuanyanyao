@@ -8,12 +8,17 @@
 <body>
     <header>
         <h1>进口原研药查询系统</h1>
-        <input type="text" id="search" placeholder="输入药品名称...">
+        <input type="text" id="search" placeholder="输入药品名称、品牌或制造商...">
         <button onclick="searchDrug()">搜索</button>
     </header>
     <main id="drug-list">
         <!-- 药品列表将通过JavaScript动态生成 -->
     </main>
+    <div id="manufacturer-drug-list" style="display: none;">
+        <h2>制造商药品列表</h2>
+        <button onclick="goBack()">返回</button>
+        <div id="manufacturer-drugs"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
